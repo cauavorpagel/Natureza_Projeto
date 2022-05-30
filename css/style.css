@@ -32,8 +32,9 @@ text-decoration: none;
 font-size: 20px;
 margin:auto 0;
 color: black;
-
 }
+
+section {}
 
 nav a:hover {
     font-size: 22px;
@@ -50,21 +51,18 @@ nav a:hover {
     padding: 20px; 
 }
 
-
-
 .title {
     display: flex;
     justify-content: center;
     font-size: x-large;
     font-weight: bold;
-    margin: 10px 550px;
+    margin: 10px;
     background-color: rgba(255, 255, 255, 0.507);
     font-size: 20px;
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
-
-} 
+}
 
 h2 {
     padding: 7px;
@@ -73,16 +71,11 @@ h2 {
 }
 
 .textos  {
-    margin: 55px auto 45px auto;
     background-color: rgba(255, 255, 255, 0.507);
     font-size: 20px;
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
-}
-
-section {
-    margin: 10px 0;
 }
 
 .vdo {
@@ -120,12 +113,85 @@ h2 {
 }
 
 .slc  {
-    margin: 55px auto 45px auto;
     background-color: rgba(255, 255, 255, 0.507);
     font-size: 20px;
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
+}
+
+main .titulod  {
+    text-align: center;
+    background-image: url(/img/planta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0 0 0;
+
+}
+
+main .titulod p {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.575);
+    margin: auto;
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+.doacao {
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.doacao form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    width: 500px;
+   margin: 20px 0;
+   border: 2px solid #000;
+   border-radius: 15px;
+}
+
+form label {
+    margin: 10px;
+    color: rgb(21, 107, 0);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+form input {
+    outline: none;
+    border: 2px dashed #180505;
+}
+
+form textarea {
+    margin-bottom: 10px;
+}
+
+form button{
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    color: rgb(21, 107, 0);
+    font-weight: bold;
+    border: 2px solid rgb(16, 78, 0);
+    border-radius: 10px;
+    background-color: rgb(219, 219, 219);
+}
+
+form button:hover {
+    font-size: 18px;
+    color: rgb(44, 173, 12);
+    font-weight: bold;
+    border: 2px solid rgb(48, 218, 5);
+    background-color: rgb(3, 2, 2);
 }
 
 footer {
@@ -166,24 +232,14 @@ footer .midias img {
 
 @media (max-width:580px) {
 
-    .img {
-        height: unset;
-    }
-
-    .img3 {
-        height: unset;
-    }
-
     .iconeflo {
         display: none;
     }
-}
 
-@media (max-width:580px) {
-    
     footer {
         display: flex;
         flex-direction: column;
     }
-    
 }
+    
+
